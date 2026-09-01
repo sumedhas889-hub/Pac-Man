@@ -1,6 +1,14 @@
 # 🕹️ Pac-Man Arcade (C++ & Modern Raylib)
 
-An authentic, modular arcade implementation of **Pac-Man** built in modern C++17 with real-time vector graphics rendering, authentic ghost AI targeting algorithms, and responsive input buffering.
+## 📖 Project Description
+
+This project is a recreation of the classic arcade game **Pac-Man**, developed using **Modern C++ (C++17)** and the **Raylib** graphics library. The objective of the project is to build a complete, responsive 2D game engine from scratch, combining fundamental software engineering principles with core game development concepts such as real-time rendering, collision detection, and automated artificial intelligence.
+
+### Technical Highlights & Core Pillars
+- **Graphics & Engine Architecture:** Built in modern C++ utilizing Raylib for windowing, user input, and 2D vector rendering. The project follows clean Object-Oriented Programming (OOP) design patterns and uses CMake with `FetchContent` for automated dependency management.
+- **Responsive Gameplay & Physics:** Features a tile-based maze system with collision handling, screen-wrapping tunnels, score tracking, animated sprites, and an input buffering system that ensures smooth, responsive cornering.
+- **Intelligent Ghost AI & Pathfinding:** Each ghost is programmed with a distinct behavioral personality (chasing, ambushing, flanking, and retreating) along with global mode timers (Scatter, Chase, and Frightened). When ghosts are eaten, pathfinding algorithms (such as BFS) guide their return to the central ghost house.
+- **State Management & Game Loop:** Implements a structured finite state machine to manage screen transitions, level progression, player lives, animations, and arcade-style scoring combos.
 
 ---
 
@@ -17,7 +25,7 @@ An authentic, modular arcade implementation of **Pac-Man** built in modern C++17
   - **Frightened Mode**: Energizer consumption turns ghosts blue with flashing warning indicators.
   - **Eaten Eyes Pathfinding**: BFS shortest-path navigation back to the ghost house.
   - **Combo Multipliers**: Consecutive ghost eating awards $200 \rightarrow 400 \rightarrow 800 \rightarrow 1600$ points.
-- **Zero-Friction Build**: Uses CMake `FetchContent` to download and compile Raylib automatically.
+- **Zero-Friction Build**: Uses CMake `FetchContent` to download and compile Raylib automatically without manual installations.
 
 ---
 
