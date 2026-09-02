@@ -216,7 +216,7 @@ void Engine::render() {
         DrawCircleSector(Vector2{ lx, ly }, 8.0f, 30.0f, 330.0f, 16, YELLOW);
     }
 
-    // State Banners
+    // State Banner
     if (m_gameState == GameState::READY) {
         DrawText("READY!", SCREEN_WIDTH / 2 - 45, 17 * TILE_SIZE + 4, 22, YELLOW);
     } else if (m_gameState == GameState::GAME_OVER) {
