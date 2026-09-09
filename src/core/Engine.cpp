@@ -61,6 +61,18 @@ void Engine::run() {
 }
 
 void Engine::handleInput() {
+    // Pause / Resume
+    if (IsKeyPressed(KEY_P) && 
+        (m_gameState == GameState::PLAYING || m_gameState == GameState::PAUSED)) {
+        
+        if (m_gameState == GameState::PLAYING) {
+            m_gameState = GameState::PAUSED;
+        } else {
+            m_gameState = GameState::PLAYING;
+        }
+    }
+
+    // Restart after Game Over
     if (m_gameState == GameState::GAME_OVER) {
         if (IsKeyPressed(KEY_ENTER) || IsKeyPressed(KEY_SPACE)) {
             resetLevel(true);
