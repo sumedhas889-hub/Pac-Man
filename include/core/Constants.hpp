@@ -65,14 +65,14 @@ namespace PacmanGame {
     };
 
     // Game State
-    enum class GameState {
-        READY,
-        PLAYING,
-        PACMAN_DYING,
-        GAME_OVER,
-        LEVEL_CLEARED
-    };
-
+   enum class GameState {
+    READY,
+    PLAYING,
+    PAUSED,
+    PACMAN_DYING,
+    GAME_OVER,
+    LEVEL_CLEARED
+};
     struct Position {
         float x = 0.0f;
         float y = 0.0f;
